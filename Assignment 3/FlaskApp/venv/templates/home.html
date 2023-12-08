@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Assignment 3 - Making this house, a home
+    </title>
+  </head>
+  <body>
+    <p>Devices in the Home located at {{ house_obj._address }}</p>
+    <p>
+      <ul>
+        {% for device in devices %}
+          <li>
+            {{ device._name }} made by {{ device._manufacturer }} is at {{ device._brightness }}% brightness
+          </li>
+        {% endfor %}
+        </ul>
+    </p>
+  </body>
+</html>
+
