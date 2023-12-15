@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Intellegent Housing
+    </title>
+  </head>
+  <body>
+    <p style="font-size: 20px">Colored Bulbs in the Home located at {{ house_obj._address }}:</p>
+    <p>
+      <ul>
+        {% for device in devices %}
+          <li>
+            {{ device.to_string() }}
+          </li>
+        {% endfor %}
+        </ul>
+    </p>
+    <p><a href="http://localhost:8000"> [<] Back to list</a></a></p>
+    <p><a href="http://localhost:8000/add-color-bulb">Add a colored bulb [>]</a></p>
+  </body>
+</html>
+

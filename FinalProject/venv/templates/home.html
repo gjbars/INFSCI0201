@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Intellegent Housing
+    </title>
+  </head>
+  <body>
+    <p style="font-size: 20px">Devices in the Home located at {{ house_obj._address }}:</p>
+    <p>
+      <ul>
+        {% for device in devices %}
+          <li>
+            {{ device.to_string() }}
+          </li>
+        {% endfor %}
+        </ul>
+    </p>
+    <p><a href="http://localhost:8000/add-color-bulb">Add a colored bulb [>]</a></p>
+    <p><a href="http://localhost:8000/color-list">View colored bulbs [>]</a></p>
+    <p><a href="http://localhost:8000/add-examples">Add a bunch of example devices [>]</a></p>
+    <p><a href="http://localhost:8000/remove-all">Remove all devices [>]</a></p>
+    <p><a href="http://localhost:8000/activities">View activities [>]</a></p>
+
+    <p><a href="http://localhost:8000/save">Save Devices [>]</a></p>
+    <p><a href="http://localhost:8000/load">Load Devices [>]</a></p>
+
+
+  </body>
+</html>
+

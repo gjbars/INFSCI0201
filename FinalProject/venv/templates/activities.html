@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Intellegent Housing - Activities
+    </title>
+  </head>
+  <body>
+    <p style="font-size: 20px">Activity in the Home located at {{ house_obj._address }}:</p>
+    <p>
+      <ul>
+        {% for act in activities %}
+          <li>
+            {{ act }}
+          </li>
+        {% endfor %}
+        </ul>
+    </p>
+    <p><a href="http://localhost:8000"> [<] Back to list</a></a></p>
+  </body>
+</html>
+
